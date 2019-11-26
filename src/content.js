@@ -1,4 +1,4 @@
-let x, y, w, h, video_divs, inside, divRect, overlays, overlay, caption_eng_div, fullscreen_divs, scan_interval, failsafe_interval;
+let x, y, w, h, video_divs, inside, divRect, opacity, overlays, overlay, caption_eng_div, fullscreen_divs, scan_interval, failsafe_interval;
 let CAPTIONS = false;
 let FORCE_FULL = false;
 let QUICK_HIDE_UI = false;
@@ -56,11 +56,13 @@ document.addEventListener('mousemove', e => {
 
 		overlays = document.getElementsByClassName("overlay__controls");
 
+		opacity = inside ? 1 : 0;
+		
 		if (overlays.length>0) {
 			overlay = overlays[0];
 
 			if (overlay!==null) {
-				overlay.style.opacity = !inside;
+				overlay.style.opacity = opacity;
 			}
 		}
 	}
