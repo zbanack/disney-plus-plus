@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D Plus Plus</title>
+        <!--Tailwind -->
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <style>
+            body {
+            width:320px;
+            height:240px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w-full p-4">
+            <div class="bg-white shadow-md rounded px-2 pt-2 pb-8 mb-4">
+                <div class="mb-4">
+                    <h1 class="block text-gray-700 text-lg font-bold mb-2">D Plus Plus</h1>
+                    
+
+                    <div class="mt-0 mb-4 text-gray-600">
+                        <p>This is a WIP extension that brings small quality of life improvements to the streaming service. Preferences will be set shortly after a stream loads. Updating preferences will require the page to be refreshed.</p>
+                    </div>
+
+                      <h2 class="block text-gray-800 text-md font-bold mb-2">Closed Captions (English only)</h2>
+                      <div class="md:flex md:items-center mb-6">
+                        <label class="md:w-2/3 block text-gray-600">
+                          <input class="mr-2 leading-tight" type="checkbox" id="closed-captions">
+                          <span class="text-sm">
+                            Automatically enable English subtitles at the start of each video
+                          </span>
+                        </label>
+                      </div>
+
+                      <h2 class="block text-gray-800 text-md font-bold mb-2">Force Fullscreen</h2>
+                      <div class="md:flex md:items-center mb-6">
+                        <label class="md:w-2/3 block text-gray-600">
+                          <input class="mr-2 leading-tight" type="checkbox" id="fullscreen">
+                          <span class="text-sm">
+                            Automatically toggle fullscreen at the start of each video (may not always work due to browser permissions)
+                          </span>
+                        </label>
+                      </div>
+
+                      <h2 class="block text-gray-800 text-md font-bold mb-2">Quick-Hide Video UI</h2>
+                      <div class="md:flex md:items-center mb-6">
+                        <label class="md:w-2/3 block text-gray-600">
+                          <input class="mr-2 leading-tight" type="checkbox" id="quick-hide">
+                          <span class="text-sm">
+                            Immediately hide the video overlay UI when the cursor leaves the video area
+                          </span>
+                        </label>
+                      </div>
+                </div>
+
+                    <button id="set" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                    Save
+                    </button>
+                </div>
+            <p class="text-center text-gray-500 text-xs">
+                <a href="https://www.zackbanack.com">Made by Zack Banack</a>&nbsp;&bull;&nbsp;<a href="https://www.github.com/zbanack/disney-plus-plus">Github</a><br><br>This extension is not associated with the Disney brand nor its associates, affiliates, sponsors. This extension is free with no developer profits. 
+            </p>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>

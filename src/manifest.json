@@ -1,0 +1,24 @@
+{
+  "name": "D Plus Plus",
+  "short_name": "D Plus Plus",
+  "description": "Small quality of life improvements for the streaming service",
+  "version": "1.0",
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.disneyplus.com/video/*", "https://disneyplus.com/video/*", "http://disneyplus.com/video/*", "http://www.disneyplus.com/video/*"
+        ],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "browser_action": {
+      "default_title": "Small quality of life improvements for the streaming service",
+      "default_popup": "index.html"
+  },
+  "manifest_version": 2
+}
